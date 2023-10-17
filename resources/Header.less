@@ -1,10 +1,22 @@
 @import 'variables.less';
 
+
 .ocdla-header {
     background-color: @ocdla-blue;
     padding: 1rem;
     margin: 2rem 0;
-    color: #fff;
+    color: @ocdla-gold;
     text-align: center;
     font-size: 2rem;
+}
+.ocdla-header div{
+    position: relative;
+}
+.ocdla-header div::after{
+    display:block;
+    background-image: url( "/resources/assets/lod-masthead-white.svg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 200px;
+    content: "";
 }
