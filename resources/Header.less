@@ -2,21 +2,22 @@
 
 
 .ocdla-header {
-    background-color: @ocdla-blue;
+    background-color: #fff;
     padding: 1rem;
     margin: 2rem 0;
-    color: @ocdla-gold;
+    color: @ocdla-blue;
     text-align: center;
     font-size: 2rem;
+    display:flex;
+}
+
+.ocdla-header img{
+    width: 25vw;
+}
+
+.ocdla-header h1 {
+    font-size: 1.5rem;
 }
 .ocdla-header div{
     position: relative;
-}
-.ocdla-header div::after{
-    display:block;
-    background-image: url( "/resources/assets/lod-masthead-white.svg");
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 200px;
-    content: "";
 }
