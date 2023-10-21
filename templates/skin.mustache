@@ -1,14 +1,7 @@
 <div id="mw-wrapper">
-	<div class="ocdla-header-container">
+	
 	{{>Header}}
 	{{>Masthead}}
-		<!--site navigation-->
-	<div id="site-navigation">
-		{{#data-portlets-sidebar.data-portlets-first}}{{>Portlet}}{{/data-portlets-sidebar.data-portlets-first}}
-		{{#data-portlets-sidebar.array-portlets-rest}}{{>Portlet}}{{/data-portlets-sidebar.array-portlets-rest}}
-		{{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
-	</div>
-	</div>
 	
 	<div class="mw-body" id="content" role="main">
 		<div id="siteNotice">{{{html-site-notice}}}</div>

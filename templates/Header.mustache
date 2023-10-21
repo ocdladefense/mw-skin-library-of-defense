@@ -1,10 +1,18 @@
-<header class="ocdla-header">
-    <a href="{{link-mainpage}}">
+
+<div class="ocdla-header-container">
+	<header class="ocdla-header">
+   		<a href="{{link-mainpage}}">
 			{{#data-logos}}
 				{{#icon}}<img src="{{.}}">{{/icon}}
 				{{#wordmark}}<img src="{{src}}" width="{{width}}" height="{{height}}">{{/wordmark}}
-				{{^wordmark}}<h1>{{msg-tagline}}</h1>{{/wordmark}}
+				{{^wordmark}}<span id="ocdla-subtitle">{{msg-tagline}}</span>{{/wordmark}}
 			{{/data-logos}}
 			</a>
-	<div>Strength in Numbers. Fairness in justice.</div>
-</header>
+	</header>
+			<!--site navigation-->
+		<div id="site-navigation">
+			{{#data-portlets-sidebar.data-portlets-first}}{{>Portlet}}{{/data-portlets-sidebar.data-portlets-first}}
+			{{#data-portlets-sidebar.array-portlets-rest}}{{>Portlet}}{{/data-portlets-sidebar.array-portlets-rest}}
+			{{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
+		</div>
+</div>
