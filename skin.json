@@ -14,7 +14,7 @@
 	},
 	"ValidSkinNames": {
 		"example": {
-			"class": "SkinMustache",
+			"class": "MediaWiki\\Skins\\Example\\includes\\ExampleSkin",
 			"args": [
 				{
 					"name": "example",
@@ -34,7 +34,12 @@
 					],
 					"scripts": [
 						"skins.example"
-					]
+					],
+					"entrance": {
+						"entrance-title" : "Library of Defense Main Entrance",
+						"id" : "ocdla-main-entrance",
+						"href" : "https://libraryofdefense.ocdla.org/Welcome_to_The_Library"
+					}
 				}
 			]
 		}
