@@ -14,7 +14,8 @@
 	},
 	"ValidSkinNames": {
 		"example": {
-			"class": "MediaWiki\\Skins\\Example\\includes\\ExampleSkin",
+			"class": "SkinMustache",
+			"foobarClass": "MediaWiki\\Skins\\Example\\ExampleSkin",
 			"args": [
 				{
 					"name": "example",
