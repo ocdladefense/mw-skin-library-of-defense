@@ -1,11 +1,13 @@
 <div class="ocdla-masthead" id="masthead">
 		<a href="/" class="masthead_link">&nbsp;</a>
 		<div id="ocdla-masthead-links" class="ocdla-link">
-			<a href="" title="Go to the OCDLA homepage">
-				<img src="" alt="Go to the OCDLA website">
-			</a>
-			<br>
-			<a href="" title="Go to the OCDLA homepage">OCDLA HOME</a>
+			<ul>
+			{{#masthead-nav-links}}
+				<li>
+					<a href={{href}}>{{text}}</a>
+				</li>
+			{{/masthead-nav-links}}
+			</ul>
 		</div>
 
 		<div class="masthead_filler">&nbsp;</div>

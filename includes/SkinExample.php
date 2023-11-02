@@ -36,8 +36,26 @@ private $additionalTemplateData = [
     "entrance" => [
         "entrance-title" => "Library of Defense Main Entrance",
         "id" => "ocdla-main-entrance",
-        "href" => "https://libraryofdefense.ocdla.org/Welcome_to_The_Library"
+        "href" => "/Welcome_to_The_Library"
+    ],
+    "masthead-nav-links" =>[
+        [
+            "text" =>"Ocdla Home",
+            "href"=>"https://www.ocdla.org/"
+        ],
+        [
+            "text" =>"Get Involved",
+            "href" =>"/OCDLA_Legislative_Committee"
+        ],
+        [
+            "text" =>"Report a Problem",
+            "href" =>"#"
+        ],
+        [
+            "text"=>"Edit Site",
+            "href" =>"/How_To_Edit"
         ]
+    ]
     
 ];
 
