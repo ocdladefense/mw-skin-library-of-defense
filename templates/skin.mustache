@@ -3,8 +3,15 @@
 	{{>Header}}
 	{{>Masthead}}
 	{{>MainNavigation}}
-	
+	 
 	<div class="mw-body" id="content" role="main">
+		<h3 id="ocdla-main-entrance">{{#entrance}}<a href={{href}}>{{entrance.entrance-title}}</a>{{/entrance}}</h3>
+		    <div class="mw-default-hidden>
+            {{#data-portlets-sidebar.data-portlets-first}}{{>Portlet}}{{/data-portlets-sidebar.data-portlets-first}}
+                <div class="mw-default-hidden">{{#data-portlets-sidebar.array-portlets-rest}}{{>Portlet}}{{/data-portlets-sidebar.array-portlets-rest}}</div>
+            {{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
+        </div>
+		
 		<div id="siteNotice">{{{html-site-notice}}}</div>
 		{{{html-user-message}}}
 		<div class="mw-indicators mw-body-content">
@@ -28,7 +35,7 @@
 		</div>
 		{{{html-after-content}}}
 	</div>
-	<div id="mw-navigation">
+	<div id="mw-navigation" class="mw-default-hidden">
 		<h2>{{msg-navigation-heading}}</h2>
 		<div id="p-logo" class="mw-portlet" role="banner">
 			<a href="{{link-mainpage}}">
@@ -39,18 +46,9 @@
 			{{/data-logos}}
 			</a>
 		</div>
-		{{#data-search-box}}
-		<form action="{{form-action}}" role="search" class="mw-portlet" id="p-search">
-			<input type="hidden" name="title" value="{{page-title}}">
-			<h3>
-				<label for="searchInput">{{msg-search}}</label>
-			</h3>
-			{{{html-input}}}
-			{{{html-button-search}}}
-		</form>
-		{{/data-search-box}}
+		
 		{{#data-portlets}}
-		<div id="user-tools">
+		<div id="user-tools" class="mw-default-hidden">
 			{{#data-user-page}}{{>Portlet}}{{/data-user-page}}
 			{{#data-notifications}}{{>Portlet}}{{/data-notifications}}
 			{{#data-user-interface-preferences}}{{>Portlet}}{{/data-user-interface-preferences}}

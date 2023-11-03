@@ -1,14 +1,20 @@
 @import 'variables.less';
 
 
-.ocdla-header {
+.ocdla-header-container{
     background-color: #fff;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1rem;
+}
+.ocdla-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .ocdla-header a{
     display:flex;
+    justify-content: space-around;
     color: @ocdla-blue;
     text-align: center;
     font-size: 1.5rem;

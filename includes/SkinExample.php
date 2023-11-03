@@ -2,30 +2,7 @@
 
 class SkinExample extends SkinMustache {
 
-    /**
-	 * Extends getPortletData function
-	 */
-	protected function getPortletsData( $label, array $urls = [] )
-	{
-		$data = parent::getPortletData( $label, $urls );
-
-		// Sanitize and standardize links
-		foreach ( $urls as $key => $item ) {
-		    
-		    $item['text'] ??= (!is_int($key) ? wfMessage( $key )->text() : '');
-		    
-		    if ($item['class'] == 'selected') $item['class'] = 'active';
-		    
-		    if ($item['links']) {
-		        $item = $item['links'][0];
-		        unset($item['links']);
-		    }
-		
-			$data['array-links'][] = [is_int($key) ? $item['text'] : $key => $item];
-		}
-
-		return $data;
-	}
+    
 
 /*A private member to hold the additional data ($additionalTempalteData)
 A method to accept the additional data (setTemplateVariable)
@@ -37,6 +14,36 @@ private $additionalTemplateData = [
         "entrance-title" => "Main Entrance",
         "id" => "ocdla-main-entrance",
         "href" => "/Welcome_to_The_Library"
+    ],
+    "main-navigation-links" =>[
+        [
+            "text"=> "Home",
+            "href"=>"#"
+        ],
+      [
+        "text"=> "Blog",
+        "href"=>"#"
+      ],
+      [
+        "text"=> "Case Review",
+        "href"=>"#"
+      ],
+      [
+        "text"=> "OCDLA Books Online",
+        "href"=>"#"
+      ],
+      [
+        "text"=> "Resources",
+        "href"=>"#"
+      ],
+      [
+        "text"=> "Contributor Ryan Scott",
+        "href"=>"#"
+      ],
+      [
+        "text"=>"Make a Suggestion",
+        "href"=>"#"
+      ]
     ],
     "masthead-nav-links" =>[
         [
@@ -58,7 +65,7 @@ private $additionalTemplateData = [
             "text"=>"Edit Site",
             "href" =>"/How_To_Edit",
             "link-grid-id"=>"link-right-bottom"
-        ]
+        ],
     ]
     
 ];

@@ -16,6 +16,13 @@ body{
     }
 }
 
+.mw-body, .mw-body-content, .mw-first-heading, .mw-footer {
+    margin: 0 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
 a:link{
     text-decoration: none;
     color:#51648F;
@@ -32,11 +39,6 @@ h1{
     color : rgb(81, 100, 143);
   }
 
-
-.ocdla-header-container {
-    display: flex;
-    flex-direction: column;
-}
 
 .mw-default-hidden{
     display: none;
@@ -57,11 +59,6 @@ h1{
     padding: 0 .33rem;
   }
 
-.search-button{
-    border-color : #51648F;
-    border-width : 1px;
-    border-radius : 8px;
-}
 
 #ocdla-subtitle{
     font-family : Avenir;
@@ -70,18 +67,58 @@ h1{
     color : rgb(100, 120, 160);
 }
 #ocdla-main-navigation{
-    margin-top:1.5rem;
+    margin:1.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ocdla-search{
+    display: flex;
+    align-items: center;
+}
+.site-navigation{
     display:flex;
     flex-direction: row;
 }
+.site-navigation ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-#ocdla-main-navigation h3{
+.site-navigation ul li{
+    FONT-SIZE: .8rem;
+    border-left: solid 1px #51648F;
+    margin: .25rem;
+    padding: .75rem 1rem;
+}
+
+.site-navigation ul li:first-child{
+    text-transform: uppercase;
+    border-left: none;
+}
+
+.searchButton{
+    background-color: #fff;
+    border: 2px rgba(128, 128, 128, 0.5) solid;
+    padding: .25rem .75rem;
+    border-color : #51648F;
+    background-color: #51648f36;
+    border-width : 1px;
+    border-radius : 8px;
+}
+#searchInput{
+    padding:.5rem;
+    border-radius : 16px;
+}
+#ocdla-main-entrance h3{
     text-transform: uppercase;
     font-size: 1.25rem;
     font-weight: 800;
     color: @ocdla-blue;
     margin: auto;
 }
+
 
 .mw-portlet-body{
     //background-color:red;
