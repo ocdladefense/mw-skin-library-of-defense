@@ -7,9 +7,10 @@
     margin: 1rem;
 }
 .ocdla-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+    align-items: center;
 }
 
 .ocdla-header a{
@@ -29,14 +30,13 @@
  }
 
 .ocdla-header img{
-    width: 20%;
+    width: 50%;
 }
 
 #ocdla-subtitle{
     color: @ocdla-blue;
     padding: 0 3rem;
+    display: inline-block;
 }
 
-.ocdla-header div{
-    position: relative;
-}
+
