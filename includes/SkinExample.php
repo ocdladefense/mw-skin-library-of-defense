@@ -34,7 +34,7 @@ A way to add the additional data to the data already passed ($data += $this->add
 */
 private $additionalTemplateData = [
     "entrance" => [
-        "entrance-title" => "Library of Defense Main Entrance",
+        "entrance-title" => "Main Entrance",
         "id" => "ocdla-main-entrance",
         "href" => "/Welcome_to_The_Library"
     ],
