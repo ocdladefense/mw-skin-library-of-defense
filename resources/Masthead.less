@@ -1,15 +1,94 @@
 @import 'variables.less';
-
-.ocdla-masthead {
+.ocdla-masthead{
     background-color: @ocdla-blue;
-    display: flex;
+    padding: 0 2rem;
 }
+#ocdla-masthead-links {
+    background-color: @ocdla-blue;
+    /*display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "link-left-top . link-right-top" 
+    "link-left-bottom filler link-right-bottom";
+*/
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    padding: 2rem 0;
+    margin: 0 0.5rem;
+
+}
+
+//white bordered buttons 
+
+/*
 #ocdla-masthead-links{
-    display:block;
     background-image: url( "/resources/assets/lod-masthead-white.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 50%;
+    width: 100%;
+    background-size: 50%;
     height: 200px;
     content: "";
+}*/
+
+#ocdla-masthead-links a{
+    display:inline-block;
+    margin: .5rem;
+    padding: 0.5rem 0.65rem;
+    font-size : 10px;
+    letter-spacing : 1.12px;
+    text-transform : uppercase;
+    text-align: center;
+    color : #FFFFFF;
+    color : rgb(255, 255, 255);
+    border-style : Solid;
+  border-color : #FFFFFF;
+  border-color : rgba(255, 255, 255, 1);
+  border-width : 1px;
+  border-radius : 4px;
+ 
+  -moz-border-radius : 4px;
+  -webkit-border-radius : 4px;
+}
+#link-left-top{
+    // grid-area: "link-left-top";
+    grid-column-start: 1;
+    grid-row-start: 1;
+   
+
+}
+#link-left-bottom{
+    // grid-area: "link-left-bottom";
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+#link-right-top{
+//     grid-area: "link-right-top";
+grid-column-start: 3;
+grid-row-start: 1;
+
+ }
+#link-right-bottom{
+    // grid-area: "link-right-bottom";
+    grid-column-start: 3;
+    grid-row-start: 2;
+ 
+}
+
+#masthead-filler{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+   
+    background-image: url( "/resources/assets/lod-masthead-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+    align-self: end;
+    content: "";
+
 }

@@ -41,19 +41,23 @@ private $additionalTemplateData = [
     "masthead-nav-links" =>[
         [
             "text" =>"Ocdla Home",
-            "href"=>"https://www.ocdla.org/"
+            "href"=>"https://www.ocdla.org/",
+            "link-grid-id" =>"link-left-top"
         ],
         [
             "text" =>"Get Involved",
-            "href" =>"/OCDLA_Legislative_Committee"
+            "href" =>"/OCDLA_Legislative_Committee",
+            "link-grid-id" =>"link-left-bottom"
         ],
         [
             "text" =>"Report a Problem",
-            "href" =>"#"
+            "href" =>"#",
+            "link-grid-id"=>"link-right-top"
         ],
         [
             "text"=>"Edit Site",
-            "href" =>"/How_To_Edit"
+            "href" =>"/How_To_Edit",
+            "link-grid-id"=>"link-right-bottom"
         ]
     ]
     

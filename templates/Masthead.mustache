@@ -1,14 +1,11 @@
 <div class="ocdla-masthead" id="masthead">
-		<a href="/" class="masthead_link">&nbsp;</a>
 		<div id="ocdla-masthead-links" class="ocdla-link">
-			<ul>
+			
 			{{#masthead-nav-links}}
-				<li>
-					<a href={{href}}>{{text}}</a>
-				</li>
+			<div id={{link-grid-id}}>
+				<a href={{href}}>{{text}}</a>
+			</div>
 			{{/masthead-nav-links}}
-			</ul>
+			<div id="masthead-filler">&nbsp;</div>
 		</div>
-
-		<div class="masthead_filler">&nbsp;</div>
     </div>
