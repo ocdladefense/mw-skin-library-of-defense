@@ -78,17 +78,55 @@ grid-row-start: 1;
  
 }
 
-#masthead-filler{
+#masthead-center{
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
-   
-    background-image: url( "/resources/assets/lod-masthead-white.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 80%;
-    width: 100%;
-    align-self: end;
-    content: "";
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    color: #fff;
+    justify-items: center;
+    // background-image: url( "/resources/assets/lod-masthead-white.svg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // height: 80%;
+    // width: 100%;
+    // align-self: end;
+    // content: "";
 
 }
+#masthead-center div:first-child{
+    .oclda-masthead-title();
+}
+
+#masthead-center-subhead{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 100%;
+    align-items: center;
+}
+hr {
+    color:purple;
+}
+#masthead-center-subhead hr {
+    height: 2px;
+    color: #fff;
+}
+
+#masthead-text-bottom {
+    padding: .2rem;
+    padding-left: .4rem;
+}
+
+
+#masthead-center #landing-page-title-of{
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: .1rem;
+}
+
+.hr-custom:after {
+    content: " ";
+    display: block;
+    border-bottom: 4px solid #rrggbb;
+  }

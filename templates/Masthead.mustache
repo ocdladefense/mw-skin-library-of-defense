@@ -6,6 +6,27 @@
 				<a href={{href}}>{{text}}</a>
 			</div>
 			{{/masthead-nav-links}}
-			<div id="masthead-filler">&nbsp;</div>
+
+			<div id ={{masthead-center-title.link-grid-id}}>
+				<div>
+					{{#masthead-text-top}}
+						<span id={{id}} class={{class}}>{{text}}</span>
+					{{/masthead-text-top}}
+				</div>
+				<div id="masthead-center-subhead">
+					<div class="hr-custom">
+						<hr>
+					</div>
+					<div id="masthead-text-bottom">
+						{{#masthead-text-bottom}}
+							<span class={{class}}>{{text}}</span>
+						{{/masthead-text-bottom}}
+					</div>
+					<div>
+						<hr>
+					</div>
+				</div>
+			
+			</div>
 		</div>
     </div>

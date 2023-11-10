@@ -19,14 +19,9 @@
 		<div id="{{id}}" class="{{class}}">{{{html}}}</div>
 		{{/array-indicators}}
 		</div>
-		{{{html-title-heading}}}
-		<div id="siteSub">{{msg-tagline}}</div>
 		<div class="mw-body-content">
-			<div id="contentSub">
-				{{{html-subtitle}}}
-				{{{html-undelete-link}}}
-			</div>
-			{{{html-body-content}}}
+		{{{html-title-heading}}}
+			{{>Article}}
 			<!-- todo: replace with .mixin-clearfix -->
 			<div class="visualClear"></div>
 			{{#data-portlets}}

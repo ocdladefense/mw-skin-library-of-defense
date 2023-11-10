@@ -45,29 +45,59 @@ private $additionalTemplateData = [
         "href"=>"#"
       ]
     ],
+    "masthead-center-title" =>[
+      "link-grid-id" =>"masthead-center",
+    ],
+    "masthead-text-top" =>[
+      [
+        "id" => "landing-page-title-Library",
+        "text" =>"Library",
+        "class"=>"ocdla-caps"
+      ],
+      [
+        "id" => "landing-page-title-of",
+        "text" =>"of",
+        "class"=>""
+      ],
+      [
+        "id" => "landing-page-title-Defense",
+        "text" =>"Defense",
+        "class"=>"ocdla-caps"
+      ]
+    ],
+    "masthead-text-bottom" =>[
+      [
+        "text" =>"Editor in Chief: ",
+        "class"=>"ocdla-caps"
+      ],
+      [
+        "id" => "editor-name",
+        "text" =>"Name Name",
+        "class"=>""
+      ]
+    ],
     "masthead-nav-links" =>[
-        [
-            "text" =>"Ocdla Home",
-            "href"=>"https://www.ocdla.org/",
-            "link-grid-id" =>"link-left-top"
-        ],
-        [
-            "text" =>"Get Involved",
-            "href" =>"/OCDLA_Legislative_Committee",
-            "link-grid-id" =>"link-left-bottom"
-        ],
-        [
-            "text" =>"Report a Problem",
-            "href" =>"#",
-            "link-grid-id"=>"link-right-top"
-        ],
-        [
-            "text"=>"Edit Site",
-            "href" =>"/How_To_Edit",
-            "link-grid-id"=>"link-right-bottom"
-        ],
+      [
+          "text" =>"Ocdla Home",
+          "href"=>"https://www.ocdla.org/",
+          "link-grid-id" =>"link-left-top"
+      ],
+      [
+          "text" =>"Get Involved",
+          "href" =>"/OCDLA_Legislative_Committee",
+          "link-grid-id" =>"link-left-bottom"
+      ],
+      [
+          "text" =>"Report a Problem",
+          "href" =>"#",
+          "link-grid-id"=>"link-right-top"
+      ],
+      [
+          "text"=>"Edit Site",
+          "href" =>"/How_To_Edit",
+          "link-grid-id"=>"link-right-bottom"
+      ],
     ]
-    
 ];
 
 public function getTemplateData() {
